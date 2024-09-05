@@ -30,7 +30,7 @@ public class App {
             //fin del ciclo diseñado para el ejercicio 3.
             
 
-            System.out.println(Numeros_pares(78, 1) + "\n");
+            System.out.println( "\n" + Numeros_pares(78, 1) + "\n");
 
             System.out.println(Suma_aleatoria((byte) 1) + "\n");
 
@@ -63,25 +63,25 @@ public class App {
         try {
             int cien = 100, quinientos = 500, ocho = 8;
             String numeros_impares = "";
-            int contador = 0; // Contador para los números en la línea
+            int contador = 0; 
     
-            // Validamos los datos ingresados en la función
+            
             if (numero < cien || numero > quinientos) {
-                return "Número no válido, por favor intente de nuevo";
+                return "Número no válido, por favor intente de nuevo.";
             } else {
                 
     
                 for (int var_ciclo = 1; var_ciclo <= numero; var_ciclo++) {
-                    if (var_ciclo % 2 != 0) { // Verificar si es impar
+                    if (var_ciclo % 2 != 0) { 
                         numeros_impares += var_ciclo;
                         contador++; 
     
-                        // Comprobar si se debe agregar una coma o un salto de línea
+                        
                         if (contador < ocho && var_ciclo < numero) {
-                            numeros_impares += ", "; // Agregar coma si no es el último número en la línea
+                            numeros_impares += ", "; 
                         } else {
-                            numeros_impares += "\n"; // Salto de línea después de 8 números o al final
-                            contador = 0; // Reiniciar el contador
+                            numeros_impares += "\n"; 
+                            contador = 0; 
                         }
                     }
                 }
@@ -107,7 +107,7 @@ public class App {
             final byte dos = 2, uno = 1;
             String sucesion = "";
             if (n <= dos)
-                return "Has ingresado un número no válido, por favor intenta de nuevo con uno que sea mayor que dos";
+                return "Has ingresado un número no válido, por favor intenta de nuevo con uno que sea mayor que dos.";
             else {
                 for (fibo = uno; fibo <= n; fibo++) {
                     suma = num + num1;
@@ -159,7 +159,7 @@ public class App {
         try {
 
             if (valorfinal <= valorinicial )
-                return "Has ingresado un intervalo no válido, por favor intenta de nuevo";
+                return "Has ingresado un intervalo no válido, por favor intenta de nuevo.";
             
 
             final short nov = 900, uno = 1, dos = 2, cero = 0;
@@ -174,7 +174,7 @@ public class App {
                         pares ++;
 
             }
-            return "Fueron generados " + pares + " números pares";
+            return "Fueron generados " + pares + " números pares.";
 
         } catch (Exception e) {
             return "Ha ocurrido un error inesperado" + e;
